@@ -1,0 +1,14 @@
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\obj\Debug\TaskManager.API.Tests.csprojAssemblyReference.cache
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\obj\Debug\TaskManager.API.Tests.csproj.CoreCompileInputs.cache
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\obj\Debug\TaskManager.API.Tests.csproj.CopyComplete
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\EC151LK\Desktop\FirstTaskManagerApp-master\FirstTaskManagerApp-master\TaskManager.API\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
