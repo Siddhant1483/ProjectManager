@@ -10,6 +10,7 @@ namespace TaskManager.API.Controllers
     {
         public ActionResult Index()
         {
+            var i = 10;
             ViewBag.Title = "Mahesh Home Page";
 
             return View();
