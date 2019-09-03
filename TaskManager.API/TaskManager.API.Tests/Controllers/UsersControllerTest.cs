@@ -1,10 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskManager.API.Controllers;
+using TaskManager.Business;
 using TaskManager.Model;
 
 namespace TaskManager.API.Tests
@@ -14,78 +10,187 @@ namespace TaskManager.API.Tests
     {
         [Test]
         public void GetTaskDetails()
-        {
-            // Arrange
-            UsersController controller = new UsersController();
-
-            // Act
-            List<UsersModel> result = controller.GetTaskDetails();
-
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual(1, result.Count());
-            Assert.AreEqual(1, result.ElementAt(0).UserId);
-        }
-
-        [Test]
-        public void Post()
-        {
-            // Arrange
-            UsersModel record = new UsersModel() {
-                FirstName="John",
-                LastName="trump",
-                EmployeeId=321,
-            };
-            UsersController controller = new UsersController();
-
-            // Act
-            var result = controller.Post(record);
-
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual(true, result);
-        }
-
-        [Test]
-        public void Put()
-        {
-            // Arrange
-            int userID = 0;
-            UsersController controller = new UsersController();
-            List<UsersModel> result = controller.GetTaskDetails();
-            userID = result.ElementAt(0).UserId;
-            UsersModel record = new UsersModel()
+        {           
+            try
             {
-                UserId= userID,
-                FirstName = "John",
-                LastName = "trump",
-                EmployeeId = 321,
-            };
+                using (var userOperation = new UsersOperations())
+                {
 
-            // Act
-            var success = controller.Put(record);
+                    var userList = userOperation.GetUserDetails();
+                    if (userList != null)
+                    {
+                        Assert.IsNotNull(userList);
+                       // Assert.AreEqual(1, userList.Count());                       
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail No User Present");
 
-            // Assert
-            // Assert
-            Assert.IsNotNull(success);
-            Assert.AreEqual(true, success);
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
         }
 
         [Test]
-        public void Delete()
+        public void InsertVaildUser()
         {
-            // Arrange
-            int userID = 0;
-            UsersController controller = new UsersController();
-            List<UsersModel> result = controller.GetTaskDetails();
-            userID = result.ElementAt(0).UserId;
+            try
+            {
+                using (var userOperation = new UsersOperations())
+                {
+                    UsersModel record = new UsersModel()
+                    {
+                        FirstName = "John",
+                        LastName = "trump",
+                        EmployeeId = 3212,
+                    };
 
-            // Act
-            var success = controller.Delete(userID);
+                    var user = userOperation.InsertUserDetail(record);
+                    if (user)
+                    {
+                        Assert.IsTrue(user, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Insert Data");
 
-            // Assert
-            Assert.IsNotNull(success);
-            Assert.AreEqual(true, success);
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void UpdateVaildUser()
+        {            
+            try
+            {
+                using (var userOperation = new UsersOperations())
+                {
+                    UsersModel record = new UsersModel()
+                    {
+                        FirstName = "John Test",
+                        LastName = "trump",
+                        EmployeeId = 321,
+                        UserId = 5
+                    };
+
+                    var user = userOperation.UpdateUserDetail(record);
+                    if (user)
+                    {
+                        Assert.IsTrue(user, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Update Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void UpdateInVaildUser()
+        {
+            try
+            {
+                using (var userOperation = new UsersOperations())
+                {
+                    UsersModel record = new UsersModel()
+                    {
+                        FirstName = "John Test",
+                        LastName = "trump",
+                        EmployeeId = 32,
+                        UserId = 55
+                    };
+
+                    var user = userOperation.UpdateUserDetail(record);
+                    if (user)
+                    {
+                        Assert.IsTrue(user, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Update Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void DeleteVaildUser()
+        {           
+            try
+            {
+                using (var userOperation = new UsersOperations())
+                {
+
+                    int userId = 7;
+                    var userList = userOperation.DeleteUserById(userId);
+                    if (userList)
+                    {
+                        Assert.IsTrue(userList, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Delete User Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void DeleteInVaildUser()
+        {
+            try
+            {
+                using (var userOperation = new UsersOperations())
+                {
+
+                    int userId = 32;
+                    var userList = userOperation.DeleteUserById(userId);
+                    if (userList)
+                    {
+                        Assert.Pass("Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Delete User Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
         }
     }
 }

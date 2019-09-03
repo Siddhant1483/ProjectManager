@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="13" result="Failed" total="13" passed="1" failed="12" inconclusive="0" skipped="0" asserts="2" engine-version="3.10.0.0" clr-version="4.0.30319.42000" start-time="2019-09-02 14:36:36Z" end-time="2019-09-02 14:38:17Z" duration="101.447188">
+  <command-line><![CDATA[..\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit3-console.exe  bin/Debug/TaskManager.API.Tests.dll ]]></command-line>
+  <test-suite type="Assembly" id="0-1017" name="TaskManager.API.Tests.dll" fullname="C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\TaskManager.API.Tests.dll" runstate="Runnable" testcasecount="13" result="Failed" site="Child" start-time="2019-09-02 14:36:39Z" end-time="2019-09-02 14:38:17Z" duration="97.628768" total="13" passed="1" failed="12" warnings="0" inconclusive="0" skipped="0" asserts="2">
+    <environment framework-version="3.12.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.15063.0" platform="Win32NT" cwd="C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests" machine-name="DESKTOP-P5EPFUT" user="daved" user-domain="DESKTOP-P5EPFUT" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.6.1" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="4" />
+    </settings>
+    <properties>
+      <property name="_PID" value="15104" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="TestSuite" id="0-1018" name="TaskManager" fullname="TaskManager" runstate="Runnable" testcasecount="13" result="Failed" site="Child" start-time="2019-09-02 14:36:39Z" end-time="2019-09-02 14:38:17Z" duration="97.594727" total="13" passed="1" failed="12" warnings="0" inconclusive="0" skipped="0" asserts="2">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="0-1019" name="API" fullname="TaskManager.API" runstate="Runnable" testcasecount="13" result="Failed" site="Child" start-time="2019-09-02 14:36:39Z" end-time="2019-09-02 14:38:17Z" duration="97.593721" total="13" passed="1" failed="12" warnings="0" inconclusive="0" skipped="0" asserts="2">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="0-1020" name="Tests" fullname="TaskManager.API.Tests" runstate="Runnable" testcasecount="13" result="Failed" site="Child" start-time="2019-09-02 14:36:39Z" end-time="2019-09-02 14:38:17Z" duration="97.593682" total="13" passed="1" failed="12" warnings="0" inconclusive="0" skipped="0" asserts="2">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestFixture" id="0-1015" name="HomeControllerTest" fullname="TaskManager.API.Tests.HomeControllerTest" classname="TaskManager.API.Tests.HomeControllerTest" runstate="Runnable" testcasecount="1" result="Passed" start-time="2019-09-02 14:36:39Z" end-time="2019-09-02 14:36:40Z" duration="0.886663" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
+            <test-case id="0-1016" name="Index" fullname="TaskManager.API.Tests.HomeControllerTest.Index" methodname="Index" classname="TaskManager.API.Tests.HomeControllerTest" runstate="Runnable" seed="722616921" result="Passed" start-time="2019-09-02 14:36:39Z" end-time="2019-09-02 14:36:40Z" duration="0.866337" asserts="2" />
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1000" name="ProjectControllerTest" fullname="TaskManager.API.Tests.ProjectControllerTest" classname="TaskManager.API.Tests.ProjectControllerTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2019-09-02 14:36:40Z" end-time="2019-09-02 14:38:17Z" duration="96.450469" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1004" name="Delete" fullname="TaskManager.API.Tests.ProjectControllerTest.Delete" methodname="Delete" classname="TaskManager.API.Tests.ProjectControllerTest" runstate="Runnable" seed="1300333160" result="Failed" label="Error" start-time="2019-09-02 14:36:40Z" end-time="2019-09-02 14:37:46Z" duration="65.255381" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.ProjectController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\ProjectController.cs:line 28
+   at TaskManager.API.Tests.ProjectControllerTest.Delete() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\ProjectControllerTest.cs:line 80
+--Win32Exception
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1001" name="GetTaskDetails" fullname="TaskManager.API.Tests.ProjectControllerTest.GetTaskDetails" methodname="GetTaskDetails" classname="TaskManager.API.Tests.ProjectControllerTest" runstate="Runnable" seed="1388107244" result="Failed" label="Error" start-time="2019-09-02 14:37:46Z" end-time="2019-09-02 14:38:17Z" duration="31.111131" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.ProjectController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\ProjectController.cs:line 28
+   at TaskManager.API.Tests.ProjectControllerTest.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\ProjectControllerTest.cs:line 22
+--Win32Exception
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1002" name="Post" fullname="TaskManager.API.Tests.ProjectControllerTest.Post" methodname="Post" classname="TaskManager.API.Tests.ProjectControllerTest" runstate="Runnable" seed="1536227217" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.052605" asserts="0">
+              <failure>
+                <message><![CDATA[System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.ProjectController.Post(ProjectModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\ProjectController.cs:line 76
+   at TaskManager.API.Tests.ProjectControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\ProjectControllerTest.cs:line 41]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1003" name="Put" fullname="TaskManager.API.Tests.ProjectControllerTest.Put" methodname="Put" classname="TaskManager.API.Tests.ProjectControllerTest" runstate="Runnable" seed="1610238579" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.030423" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.ProjectController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\ProjectController.cs:line 28
+   at TaskManager.API.Tests.ProjectControllerTest.Put() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\ProjectControllerTest.cs:line 54
+--Win32Exception
+   at TaskManager.API.Controllers.ProjectController.Post(ProjectModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\ProjectController.cs:line 76
+   at TaskManager.API.Tests.ProjectControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\ProjectControllerTest.cs:line 41]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1005" name="TaskControllerTest" fullname="TaskManager.API.Tests.TaskControllerTest" classname="TaskManager.API.Tests.TaskControllerTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.128788" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1009" name="Delete" fullname="TaskManager.API.Tests.TaskControllerTest.Delete" methodname="Delete" classname="TaskManager.API.Tests.TaskControllerTest" runstate="Runnable" seed="2006628564" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.034400" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.TaskController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\TaskController.cs:line 29
+   at TaskManager.API.Tests.TaskControllerTest.Delete() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\TaskControllerTest.cs:line 90
+--Win32Exception
+   at TaskManager.API.Controllers.ProjectController.Post(ProjectModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\ProjectController.cs:line 76
+   at TaskManager.API.Tests.ProjectControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\ProjectControllerTest.cs:line 41]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1006" name="GetTaskDetails" fullname="TaskManager.API.Tests.TaskControllerTest.GetTaskDetails" methodname="GetTaskDetails" classname="TaskManager.API.Tests.TaskControllerTest" runstate="Runnable" seed="352472239" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.030061" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.TaskController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\TaskController.cs:line 29
+   at TaskManager.API.Tests.TaskControllerTest.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\TaskControllerTest.cs:line 22
+--Win32Exception
+   at TaskManager.API.Controllers.ProjectController.Post(ProjectModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\ProjectController.cs:line 76
+   at TaskManager.API.Tests.ProjectControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\ProjectControllerTest.cs:line 41]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1007" name="Post" fullname="TaskManager.API.Tests.TaskControllerTest.Post" methodname="Post" classname="TaskManager.API.Tests.TaskControllerTest" runstate="Runnable" seed="1424428712" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.031999" asserts="0">
+              <failure>
+                <message><![CDATA[System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.TaskController.Post(TaskModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\TaskController.cs:line 94
+   at TaskManager.API.Tests.TaskControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\TaskControllerTest.cs:line 47]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1008" name="Put" fullname="TaskManager.API.Tests.TaskControllerTest.Put" methodname="Put" classname="TaskManager.API.Tests.TaskControllerTest" runstate="Runnable" seed="257549950" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.031821" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.TaskController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\TaskController.cs:line 29
+   at TaskManager.API.Tests.TaskControllerTest.Put() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\TaskControllerTest.cs:line 60
+--Win32Exception
+   at TaskManager.API.Controllers.TaskController.Post(TaskModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\TaskController.cs:line 94
+   at TaskManager.API.Tests.TaskControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\TaskControllerTest.cs:line 47]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-suite type="TestFixture" id="0-1010" name="UsersControllerTest" fullname="TaskManager.API.Tests.UsersControllerTest" classname="TaskManager.API.Tests.UsersControllerTest" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.121169" total="4" passed="0" failed="4" warnings="0" inconclusive="0" skipped="0" asserts="0">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="0-1014" name="Delete" fullname="TaskManager.API.Tests.UsersControllerTest.Delete" methodname="Delete" classname="TaskManager.API.Tests.UsersControllerTest" runstate="Runnable" seed="1322882242" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.033217" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.UsersController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\UsersController.cs:line 29
+   at TaskManager.API.Tests.UsersControllerTest.Delete() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\UsersControllerTest.cs:line 80
+--Win32Exception
+   at TaskManager.API.Controllers.TaskController.Post(TaskModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\TaskController.cs:line 94
+   at TaskManager.API.Tests.TaskControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\TaskControllerTest.cs:line 47]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1011" name="GetTaskDetails" fullname="TaskManager.API.Tests.UsersControllerTest.GetTaskDetails" methodname="GetTaskDetails" classname="TaskManager.API.Tests.UsersControllerTest" runstate="Runnable" seed="807001023" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.026811" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.UsersController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\UsersController.cs:line 29
+   at TaskManager.API.Tests.UsersControllerTest.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\UsersControllerTest.cs:line 22
+--Win32Exception
+   at TaskManager.API.Controllers.TaskController.Post(TaskModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\TaskController.cs:line 94
+   at TaskManager.API.Tests.TaskControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\TaskControllerTest.cs:line 47]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1012" name="Post" fullname="TaskManager.API.Tests.UsersControllerTest.Post" methodname="Post" classname="TaskManager.API.Tests.UsersControllerTest" runstate="Runnable" seed="833968781" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.032685" asserts="0">
+              <failure>
+                <message><![CDATA[System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.UsersController.Post(UsersModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\UsersController.cs:line 63
+   at TaskManager.API.Tests.UsersControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\UsersControllerTest.cs:line 42]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="0-1013" name="Put" fullname="TaskManager.API.Tests.UsersControllerTest.Put" methodname="Put" classname="TaskManager.API.Tests.UsersControllerTest" runstate="Runnable" seed="434871839" result="Failed" label="Error" start-time="2019-09-02 14:38:17Z" end-time="2019-09-02 14:38:17Z" duration="0.027573" asserts="0">
+              <failure>
+                <message><![CDATA[System.Data.SqlClient.SqlException : A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+Data:
+  HelpLink.ProdName: Microsoft SQL Server
+  HelpLink.EvtSrc: MSSQLServer
+  HelpLink.EvtID: 53
+  HelpLink.BaseHelpUrl: http://go.microsoft.com/fwlink
+  HelpLink.LinkId: 20476
+
+  ----> System.ComponentModel.Win32Exception : The network path was not found]]></message>
+                <stack-trace><![CDATA[   at TaskManager.API.Controllers.UsersController.GetTaskDetails() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\UsersController.cs:line 29
+   at TaskManager.API.Tests.UsersControllerTest.Put() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\UsersControllerTest.cs:line 55
+--Win32Exception
+   at TaskManager.API.Controllers.UsersController.Post(UsersModel record) in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API\Controllers\UsersController.cs:line 63
+   at TaskManager.API.Tests.UsersControllerTest.Post() in C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\Controllers\UsersControllerTest.cs:line 42]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

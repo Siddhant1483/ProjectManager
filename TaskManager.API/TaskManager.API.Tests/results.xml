@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="4.7.922.0">
+  <Summary numSequencePoints="0" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0" branchCoverage="0" maxCyclomaticComplexity="0" minCyclomaticComplexity="0" maxCrapScore="0" minCrapScore="0" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="0" />
+  <Modules>
+    <Module skippedDueTo="Filter" hash="FD-6B-2D-18-7D-9E-B0-6F-C4-03-61-A8-DC-75-CD-98-65-5F-2D-B5">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2018-10-09T01:51:22.2297856Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C3-AA-1C-1C-8E-82-1A-33-B0-D2-15-D7-67-2F-0B-23-E3-D3-35-BD">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit3-console.exe</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>nunit3-console</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-09-54-CA-F8-D9-E8-21-E8-AE-5F-7D-B7-DE-E1-3D-86-EC-D7-30">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-11-29T07:34:26.2229613Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="56-19-46-EE-B2-F2-BE-59-B4-C3-2F-4A-6E-93-59-8A-52-CC-E1-25">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit.engine.api.dll</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>nunit.engine.api</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F3-B1-83-1B-09-4C-8B-4B-4D-F1-AE-22-3B-BF-1C-83-85-41-B0-4C">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit.engine.dll</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>nunit.engine</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F3-B1-83-1B-09-4C-8B-4B-4D-F1-AE-22-3B-BF-1C-83-85-41-B0-4C">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit.engine.dll</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>nunit.engine</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C9-90-56-C8-34-0E-96-2A-07-09-EA-81-19-89-AB-9B-B6-6C-C4-D4">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:08.2221905Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="3A-73-A1-C9-77-A2-4B-0D-EE-93-92-04-28-0A-E5-0F-7B-06-36-12">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-11-13T02:28:00.3022365Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8A-2E-8F-D6-9D-39-02-4A-2F-30-FC-06-42-F7-0F-A8-32-69-07-72">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\Mono.Cecil.dll</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>Mono.Cecil</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="99-11-EB-F5-78-AC-B1-38-60-82-1D-90-D3-48-FC-57-C0-00-EA-04">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:08.0632402Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9D-4A-D9-EF-6E-3C-A9-69-99-30-1A-B3-AA-5A-7C-F2-17-66-83-59">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:07.8845799Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="FD-6B-2D-18-7D-9E-B0-6F-C4-03-61-A8-DC-75-CD-98-65-5F-2D-B5">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll</ModulePath>
+      <ModuleTime>2018-10-09T01:51:22.2297856Z</ModuleTime>
+      <ModuleName>mscorlib</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DD-03-C0-F6-30-61-DA-66-3E-7C-57-4F-A1-08-5C-81-F5-6E-EF-AA">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit-agent.exe</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>nunit-agent</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="56-19-46-EE-B2-F2-BE-59-B4-C3-2F-4A-6E-93-59-8A-52-CC-E1-25">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit.engine.api.dll</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>nunit.engine.api</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F3-B1-83-1B-09-4C-8B-4B-4D-F1-AE-22-3B-BF-1C-83-85-41-B0-4C">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\nunit.engine.dll</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>nunit.engine</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-09-54-CA-F8-D9-E8-21-E8-AE-5F-7D-B7-DE-E1-3D-86-EC-D7-30">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-11-29T07:34:26.2229613Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C9-90-56-C8-34-0E-96-2A-07-09-EA-81-19-89-AB-9B-B6-6C-C4-D4">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:08.2221905Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="3A-73-A1-C9-77-A2-4B-0D-EE-93-92-04-28-0A-E5-0F-7B-06-36-12">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-11-13T02:28:00.3022365Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8A-2E-8F-D6-9D-39-02-4A-2F-30-FC-06-42-F7-0F-A8-32-69-07-72">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\packages\NUnit.ConsoleRunner.3.10.0\tools\Mono.Cecil.dll</ModulePath>
+      <ModuleTime>2019-03-24T10:53:50Z</ModuleTime>
+      <ModuleName>Mono.Cecil</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="99-11-EB-F5-78-AC-B1-38-60-82-1D-90-D3-48-FC-57-C0-00-EA-04">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Remoting\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Remoting.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:08.0632402Z</ModuleTime>
+      <ModuleName>System.Runtime.Remoting</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9D-4A-D9-EF-6E-3C-A9-69-99-30-1A-B3-AA-5A-7C-F2-17-66-83-59">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:07.8845799Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9B-2E-1C-9C-2D-F2-EF-54-0A-49-10-2E-FB-9D-3F-3C-92-2A-D1-72">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\nunit.framework.dll</ModulePath>
+      <ModuleTime>2019-05-14T18:07:20Z</ModuleTime>
+      <ModuleName>nunit.framework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="58-09-54-CA-F8-D9-E8-21-E8-AE-5F-7D-B7-DE-E1-3D-86-EC-D7-30">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</ModulePath>
+      <ModuleTime>2018-11-29T07:34:26.2229613Z</ModuleTime>
+      <ModuleName>System</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D8-D0-AA-44-01-A4-68-06-BB-05-E0-D9-50-C0-0E-34-3C-7C-4B-7C">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2018-09-11T07:12:22.4257435Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F3-B1-83-1B-09-4C-8B-4B-4D-F1-AE-22-3B-BF-1C-83-85-41-B0-4C">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\nunit.engine.dll</ModulePath>
+      <ModuleTime>2019-03-24T09:53:48Z</ModuleTime>
+      <ModuleName>nunit.engine</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="3A-73-A1-C9-77-A2-4B-0D-EE-93-92-04-28-0A-E5-0F-7B-06-36-12">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll</ModulePath>
+      <ModuleTime>2018-11-13T02:28:00.3022365Z</ModuleTime>
+      <ModuleName>System.Web</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="2A-AE-10-C7-B2-2C-A8-72-60-01-92-3C-80-6A-F0-C0-25-25-DE-3D">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\TaskManager.API.Tests.dll</ModulePath>
+      <ModuleTime>2019-09-02T12:54:56.6517041Z</ModuleTime>
+      <ModuleName>TaskManager.API.Tests</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C9-90-56-C8-34-0E-96-2A-07-09-EA-81-19-89-AB-9B-B6-6C-C4-D4">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:08.2221905Z</ModuleTime>
+      <ModuleName>System.Xml</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="01-16-0A-F4-E3-40-0B-71-04-83-F2-18-0D-CD-DA-CD-9E-52-71-E7">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\TaskManager.API.dll</ModulePath>
+      <ModuleTime>2019-09-02T12:54:55.6638592Z</ModuleTime>
+      <ModuleName>TaskManager.API</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="21-13-57-54-77-49-4A-F7-4A-E1-54-A4-D5-6B-44-53-D5-5D-37-8B">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\System.Web.Mvc.dll</ModulePath>
+      <ModuleTime>2019-08-21T16:14:29.1655626Z</ModuleTime>
+      <ModuleName>System.Web.Mvc</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="C6-0B-23-25-06-3A-50-3C-57-24-3F-B5-41-7B-DE-FB-35-F1-53-9C">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:11.1254435Z</ModuleTime>
+      <ModuleName>Microsoft.CSharp</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="46-1B-5D-D5-8C-88-95-EC-5F-BE-AB-1F-A3-D8-32-A0-1F-42-30-0E">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Dynamic\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Dynamic.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:14.3747498Z</ModuleTime>
+      <ModuleName>System.Dynamic</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="">
+      <ModulePath>RefEmit_InMemoryManifestModule</ModulePath>
+      <ModuleTime>0001-01-01T00:00:00</ModuleTime>
+      <ModuleName>Anonymously Hosted DynamicMethods Assembly</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="A4-91-13-8E-48-AF-54-47-C2-A8-6F-42-5B-B0-79-9B-F1-BF-70-20">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\System.Web.WebPages.dll</ModulePath>
+      <ModuleTime>2019-08-21T16:14:29.5873383Z</ModuleTime>
+      <ModuleName>System.Web.WebPages</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="F0-75-95-99-12-3B-46-21-20-80-FA-42-E8-4F-23-D2-EA-2D-7B-0A">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\System.Web.Http.dll</ModulePath>
+      <ModuleTime>2019-08-21T16:14:29.4093163Z</ModuleTime>
+      <ModuleName>System.Web.Http</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="41-1A-DE-4F-89-D9-A7-3B-E3-0C-55-4F-F8-4C-B6-DA-F5-3D-A4-11">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\TaskManager.Model.dll</ModulePath>
+      <ModuleTime>2019-08-31T14:16:32.0739749Z</ModuleTime>
+      <ModuleName>TaskManager.Model</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D4-12-5E-23-82-6F-9F-58-40-D7-10-0F-BD-8F-74-15-33-70-96-B8">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\TaskManager.Business.dll</ModulePath>
+      <ModuleTime>2019-09-01T13:23:57.1841117Z</ModuleTime>
+      <ModuleName>TaskManager.Business</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="0C-5E-3F-40-C7-AD-AE-8E-CD-77-69-D2-60-FB-35-E3-AB-B5-91-52">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\TaskManager.DAL.dll</ModulePath>
+      <ModuleTime>2019-09-01T13:23:56.8917771Z</ModuleTime>
+      <ModuleName>TaskManager.DAL</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="12-3F-E3-10-D1-D0-35-93-2B-65-FA-C5-00-62-09-C4-DC-D6-92-BF">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\EntityFramework.dll</ModulePath>
+      <ModuleTime>2019-08-21T16:14:27.643742Z</ModuleTime>
+      <ModuleName>EntityFramework</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9D-4A-D9-EF-6E-3C-A9-69-99-30-1A-B3-AA-5A-7C-F2-17-66-83-59">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:07.8845799Z</ModuleTime>
+      <ModuleName>System.Configuration</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D8-D0-AA-44-01-A4-68-06-BB-05-E0-D9-50-C0-0E-34-3C-7C-4B-7C">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2018-09-11T07:12:22.4257435Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="7F-FF-EF-06-DF-CE-91-04-E3-81-6A-68-B2-5D-E7-3C-77-96-E6-18">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll</ModulePath>
+      <ModuleTime>2018-10-09T01:51:23.6207272Z</ModuleTime>
+      <ModuleName>System.Data</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="9D-8C-F0-38-93-AA-F9-80-7F-99-3F-48-55-49-21-AF-A0-81-85-9F">
+      <ModulePath>C:\Users\daved\Source\Repos\Angular-TaskManagement\TaskManager.API\TaskManager.API.Tests\bin\Debug\EntityFramework.SqlServer.dll</ModulePath>
+      <ModuleTime>2019-08-21T16:14:27.4719946Z</ModuleTime>
+      <ModuleName>EntityFramework.SqlServer</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D4-54-32-B5-B1-E2-7D-BE-A8-0C-10-C4-98-E4-C8-76-00-FF-CA-2D">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll</ModulePath>
+      <ModuleTime>2018-09-11T07:16:36.8920686Z</ModuleTime>
+      <ModuleName>System.Transactions</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DF-9D-73-09-1D-0F-5F-8E-BF-8F-13-D3-07-67-30-C7-15-AA-B1-D2">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:08.2422012Z</ModuleTime>
+      <ModuleName>System.Numerics</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="DC-10-6B-5A-3A-39-6A-03-4D-F0-47-6E-B7-56-22-C8-59-10-F9-0C">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data.OracleClient\v4.0_4.0.0.0__b77a5c561934e089\System.Data.OracleClient.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:14.1363845Z</ModuleTime>
+      <ModuleName>System.Data.OracleClient</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="E4-8E-28-11-42-ED-9C-EC-29-1B-6E-B0-9B-70-4E-BC-55-79-A2-1E">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:14.2451848Z</ModuleTime>
+      <ModuleName>System.ComponentModel.DataAnnotations</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="50-66-EF-9E-91-12-D2-6C-1F-BE-00-32-58-24-E8-C7-76-40-11-B6">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_64\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:11.1374416Z</ModuleTime>
+      <ModuleName>System.EnterpriseServices</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="8B-59-7F-E0-46-94-0E-BD-B7-02-5B-B4-71-52-59-1B-12-6F-C5-90">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll</ModulePath>
+      <ModuleTime>2019-02-02T08:41:10.8788423Z</ModuleTime>
+      <ModuleName>System.Xml.Linq</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="B0-8F-6B-F3-38-7B-30-60-B9-21-C5-73-1A-1B-51-A3-D1-14-AA-D4">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll</ModulePath>
+      <ModuleTime>2018-10-11T01:33:52.8480703Z</ModuleTime>
+      <ModuleName>System.Runtime.Serialization</ModuleName>
+      <Classes />
+    </Module>
+    <Module skippedDueTo="Filter" hash="D8-D0-AA-44-01-A4-68-06-BB-05-E0-D9-50-C0-0E-34-3C-7C-4B-7C">
+      <ModulePath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</ModulePath>
+      <ModuleTime>2018-09-11T07:12:22.4257435Z</ModuleTime>
+      <ModuleName>System.Core</ModuleName>
+      <Classes />
+    </Module>
+  </Modules>
+</CoverageSession>

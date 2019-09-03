@@ -1,10 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaskManager.API.Controllers;
+using TaskManager.Business;
 using TaskManager.Model;
 
 namespace TaskManager.API.Tests
@@ -15,77 +11,222 @@ namespace TaskManager.API.Tests
         [Test]
         public void GetTaskDetails()
         {
-            // Arrange
-            ProjectController controller = new ProjectController();
-
-            // Act
-            List<ProjectModel> result = controller.GetTaskDetails();
-
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual(2, result.Count());
-            Assert.AreEqual(3, result.ElementAt(0).ProjectId);
-            Assert.AreEqual(1, result.ElementAt(1).ProjectId);
-        }
-
-        [Test]
-        public void Post()
-        {
-            // Arrange
-            ProjectModel record = new ProjectModel()
-                { ManagerId= 3211,
-            Priority= 5, Projects= "Task Manager", StartDate = DateTime.Now,EndDate= DateTime.Now};
-            ProjectController controller = new ProjectController();
-
-            // Act
-            var result = controller.Post(record);
-
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual(true, result);
-        }
-
-        [Test]
-        public void Put()
-        {
-            // Arrange
-            int projectId = 0;
-            ProjectController controller = new ProjectController();
-            List<ProjectModel> result = controller.GetTaskDetails();
-            projectId = result.ElementAt(0).ProjectId;
-            ProjectModel record = new ProjectModel()
+            try
             {
-                ProjectId = projectId,
-                ManagerId = 3511,
-                Priority = 4,
-                Projects = "Task Manager1",
-                StartDate = DateTime.Now,
-                EndDate = DateTime.Now
-            };
+                using (var project = new ProjectsOperations())
+                {
+                    var projectList = project.GetProjectDetails();
+                    if (projectList != null)
+                    {
+                        Assert.IsNotNull(projectList);
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail No Project Present");
 
-            // Act
-            var success = controller.Put(record);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
 
-            // Assert
-            Assert.IsNotNull(success);
-            Assert.AreEqual(true, success);
+                throw ex;
+            }
         }
 
         [Test]
-        public void Delete()
+        public void InsertVaildProject()
         {
-            // Arrange
-            int projectId = 0;
-            ProjectController controller = new ProjectController();
-            List<ProjectModel> result = controller.GetTaskDetails();
-            projectId = result.ElementAt(0).ProjectId;
+            try
+            {
+                using (var project = new ProjectsOperations())
+                {
+                    ProjectModel record = new ProjectModel()
+                    {                
+                        ManagerId = 1,
+                        Priority = 5,
+                        Projects = "Project 55",
+                        StartDate = DateTime.Now,
+                        EndDate = DateTime.Now
+                    };
 
-            // Act
-            var success = controller.Delete(projectId);
+                    var projects = project.InsertProjectDetail(record);
+                    if (projects)
+                    {
+                        Assert.IsTrue(projects, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Insert Data");
 
-            // Assert
-            Assert.IsNotNull(success);
-            Assert.AreEqual(true, success);
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+        [Test]
+        public void InsertInVaildProject()
+        {
+            try
+            {
+                using (var project = new ProjectsOperations())
+                {
+                    ProjectModel record = new ProjectModel()
+                    {
+                        ManagerId = 555,
+                        Priority = 5,
+                        Projects = "Test Project",
+                        StartDate = DateTime.Now,
+                        EndDate = DateTime.Now
+                    };
+
+                    var projects = project.InsertProjectDetail(record);
+                    if (projects)
+                    {
+                        Assert.IsTrue(projects, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Insert Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void UpdateVaildProject()
+        {           
+            try
+            {
+                using (var project = new ProjectsOperations())
+                {
+                    ProjectModel record = new ProjectModel()
+                    {
+                        Priority = 5,                        
+                        StartDate = DateTime.Now,
+                        EndDate = DateTime.Now,
+                        ProjectId = 13,
+                        ManagerId = 1,                       
+                        Projects = "Task Manager1",                       
+                    };
+
+                    var projects = project.UpdateProjectDetail(record);
+                    if (projects)
+                    {
+                        Assert.IsTrue(projects, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Update Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void UpdateInVaildProject()
+        {
+            try
+            {
+                using (var project = new ProjectsOperations())
+                {
+                    ProjectModel record = new ProjectModel()
+                    {
+                        Priority = 5,
+                        StartDate = DateTime.Now,
+                        EndDate = DateTime.Now,
+                        ProjectId = 55,
+                        ManagerId = 5,
+                        Projects = "Task Manager1",
+                    };
+
+                    var projects = project.UpdateProjectDetail(record);
+                    if (projects)
+                    {
+                        Assert.IsTrue(projects, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Update Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void DeleteVaildProject()
+        {           
+            try
+            {
+                using (var project = new ProjectsOperations())
+                {
+                    int ProjectId = 11;
+                    var projects = project.DeleteProjectById(ProjectId);
+                    if (projects)
+                    {
+                        Assert.IsTrue(projects, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Delete Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
+        }
+
+        [Test]
+        public void DeleteInVaildProject()
+        {
+            try
+            {
+                using (var project = new ProjectsOperations())
+                {
+                    int ProjectId = 55;
+                    var projects = project.DeleteProjectById(ProjectId);
+                    if (projects)
+                    {
+                        Assert.IsTrue(projects, "Pass");
+                    }
+                    else
+                    {
+                        Assert.Fail("Fail to Delete Data");
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Assert.Fail(ex.Message);
+            }
         }
     }
 }
