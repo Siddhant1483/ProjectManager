@@ -17,25 +17,46 @@ export class UpdateComponent implements OnInit {
   formUser = {};
   constructor( private route: ActivatedRoute,private taskmanagerService: TaskManagerService,private router: Router) {  
   }
+  sdate:Date;
+  edate:Date;
+  tsk: string;
+  psk:string;
+  pror:string;
   ngOnInit() {
     this.display='block'; 
     this.route.paramMap.subscribe(params => {
-        this.task = params;
-      this.userTaskId = this.task.params.UserTaskId;
-      this.parentId = this.task.params.ParentId;
-    });
+      console.log(params);
+      this.task = params;
+    this.userTaskId = this.task.params.TaskId;
+   // this.parentId = this.task.params.ParentId;
+  });
   }
 
   public onModelSubmit(form) {
-       
-    this.tasks = {UserTaskId:parseInt(this.userTaskId, 10),ParentId:parseInt(this.parentId, 10),Task:form.name, ParentTask: form.parentTask,
-      StartDate:form.startDate, EndDate:form.endDate,
-      Priority:form.range};
+   
+    //alert(form.value.straDate[0]);
+    //alert(form.value.efDate[0]);
+      // alert(form.value.efDate.parTask.value);
       
-      this.taskmanagerService.updateTaskManagerDetails(this.tasks).subscribe(
-        taskList => {
-          this.router.navigate(['/view']);
-        });
+
+    // // this.tasks = {TaskId:parseInt(this.userTaskId, 10),
+    // //   Task:form.name, 
+    // //   ParentTask: form.parentTask,
+    // //   StartDate:form.startDate, 
+    // //   EndDate:form.endDate,
+    // //   //Project:null,
+    // //  // User:null,
+    // //   Status:null,
+    // //   Priority:form.endDate,
+    // //   IsParent : false
+    // // };
+    //   console.log(this.tasks);
+    //   this.taskmanagerService.updateTaskManagerDetails(this.tasks).subscribe(
+    //     taskList => {
+    //       alert("The Records has succussfully Updated.")
+    //       this.router.navigate(['/viewtask']);
+    //       this.display='none';
+    //     });
   }
       
       

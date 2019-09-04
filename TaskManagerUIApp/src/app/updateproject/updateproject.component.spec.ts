@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ViewComponent } from './view.component';
+import { UpdateprojectComponent } from './updateproject.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,27 +19,24 @@ describe('AppComponent', () => {
         BrowserModule,HttpClientModule,RouterModule
       ],
       declarations: [
-        ViewComponent,
+        UpdateprojectComponent,
         ],
     }).compileComponents();
   }));
 
-  it('should create the View project Component', () => {
-    const fixture = TestBed.createComponent(ViewComponent);
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(UpdateprojectComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   });
 
   it(`should  not have as title 'Project Manager'`, () => {
-    const fixture = TestBed.createComponent(ViewComponent);
+    const fixture = TestBed.createComponent(UpdateprojectComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual(undefined);
   });
  
 });
-
-
-
 
 
 

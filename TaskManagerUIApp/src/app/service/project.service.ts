@@ -2,54 +2,46 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
-import { Itask } from 'src/app/taskmodel/Itask';
-import { IparentTask } from '../taskmodel/IparentTask';
+import { Iproject } from 'src/app/taskmodel/Iproject';
 
 
 @Injectable({
   providedIn: 'root'
 })
-export class TaskManagerService {
-  private url = 'http://localhost:56858/api/Task/';
+export class ProjectService {
+  private url = 'http://localhost:56858/api/Project';
 
 
   constructor(private http: HttpClient) { }
 
 
-  getTaskManagerDetails(): Observable<Itask[]> {
+  getProjectDetails(): Observable<Iproject[]> {
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.get<Itask[]>(this.url, httpOptions);
+    return this.http.get<Iproject[]>(this.url, httpOptions);
   }
-  getTaskDetailsByProjectId(projectId): Observable<Itask[]> {
+  getSearchProjectDetails(searchProject:string): Observable<Iproject[]> {
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.get<Itask[]>(this.url+ "?projectId=" + projectId, httpOptions);
-  }
-  getTaskManagerDetailsById(taskId: number): Observable<Itask> {
-    const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.get<Itask>(this.url + "?taskId=" + taskId, httpOptions);
-  }
-  getParentTaskDetails(isParent: boolean): Observable<IparentTask[]> {
-    const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.get<IparentTask[]>(this.url + "?isParent=" + isParent, httpOptions);
+    return this.http.get<Iproject[]>(this.url+"?searchProject="+searchProject, httpOptions);
   }
 
-  addTaskManagerDetails(task: Itask): Observable<Itask> {
+  getProjectDetailsById(id): Observable<Iproject> {
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.post<Itask>(this.url, task, httpOptions);
+    return this.http.get<Iproject>(this.url + "?projectId=" + id, httpOptions);
   }
 
-  deleteTaskManagerDetails(taskID: number): Observable<Itask> {
+  addProjectDetails(project: Iproject): Observable<Iproject> {
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.delete<Itask>(this.url + '?id=' + taskID, httpOptions);
+    return this.http.post<Iproject>(this.url, project, httpOptions);
   }
 
-  updateTaskManagerDetails(task: Itask): Observable<Itask> {
+  deleteProjectDetails(projectID: number): Observable<Iproject> {
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.put<Itask>(this.url, task, httpOptions);
+    return this.http.delete<Iproject>(this.url + '?id=' + projectID, httpOptions);
   }
-  updateTaskEnd(taskId): Observable<Itask> {
+
+  updateProjectDetails(project: Iproject): Observable<Iproject> {
     const httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS, PUT, DELETE' }) };
-    return this.http.put<Itask>(this.url+ '?taskId=' + taskId, taskId, httpOptions);
+    return this.http.put<Iproject>(this.url, project, httpOptions);
   }
 
 
