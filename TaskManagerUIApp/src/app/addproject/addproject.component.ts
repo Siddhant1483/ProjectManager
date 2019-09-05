@@ -79,7 +79,8 @@ export class AddprojectComponent implements OnInit {
   onSelectedManager1() {
 
     if (this.selectedItem) {
-      this.ManagerId = this.selectedItem.EmployeeId;
+      debugger
+      this.ManagerId = this.selectedItem.UserId;
       this.ManagerName = this.selectedItem.FirstName + " " + this.selectedItem.LastName;
     };
     this.display = 'none';

@@ -161,7 +161,7 @@ export class ViewComponent implements OnInit {
     );
   }
 
-  TaskSort(sortBy) {    
+  TaskSort(sortBy) {
     switch (sortBy) {
       case "startDate":
         if (this.startDateSortCount == 0) {// ascending sorting
@@ -192,6 +192,7 @@ export class ViewComponent implements OnInit {
         }
         break;
       case "completed":
+        debugger
         this.tasks = this.tasks.sort(function (a, b) { return parseInt(b.Status) - parseInt(a.Status) });
         break;
 

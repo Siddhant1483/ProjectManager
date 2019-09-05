@@ -121,8 +121,7 @@ export class AddComponent implements OnInit {
     this.display = 'none';
   }
 
-  public onSubmit(frm, form) {
-    debugger
+  public onSubmit(frm, form) {    
     this.tasks = {
       ParentTask:null,
       TaskId: null, ParentTaskId: form.parentTask_Id, Task: form.taskDetail, ProjectId: form.project_Id,
@@ -135,6 +134,7 @@ export class AddComponent implements OnInit {
         this.IsParent ? alert("Parent Task has succussfully saved.") : alert("Task has succussfully saved.");
         frm.submitted = false;
         this.Priority = "0";
+        this.IsParent = false;
         frm.reset();
       },
       error => this.errorMessage = <any>error
